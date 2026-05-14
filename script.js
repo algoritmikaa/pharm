@@ -1,0 +1,181 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHARM — Аптека будущего</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Прелоадер -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="pharm-cross">
+        <div class="cross-h"></div>
+        <div class="cross-v"></div>
+      </div>
+      <p class="preloader-logo">PHARM</p>
+      <div class="loading-bar">
+        <div class="loading-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Хедер -->
+  <header id="header">
+    <div class="header-container">
+      <a href="#" class="logo">PH<span class="neon">A</span>RM</a>
+      <nav id="nav-menu">
+        <a href="#hero" class="nav-link">Главная</a>
+        <a href="#about" class="nav-link">О нас</a>
+        <a href="#products" class="nav-link">Продукты</a>
+        <a href="#contacts" class="nav-link">Контакты</a>
+      </nav>
+      <a href="tel:88005553535" class="phone-btn">
+        <span class="phone-icon">📞</span> 8 800 555 35 35
+      </a>
+      <button id="menu-toggle" class="hamburger" aria-label="Меню">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Главный экран -->
+  <section id="hero">
+    <div class="hero-bg-image">
+      <!-- Изображение: футуристичная аптека. Можно заменить на своё -->
+      <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Pharm interior">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title reveal">PHARM — Аптека будущего</h1>
+      <div class="typing-container reveal">
+        <span class="static-text">Мы создаём </span>
+        <span id="typing-text" class="typing-text"></span>
+      </div>
+      <a href="#products" class="cta-btn reveal">Открыть меню здоровья</a>
+    </div>
+  </section>
+
+  <!-- О нас -->
+  <section id="about">
+    <div class="section-header reveal">
+      <h2>О нас</h2>
+      <div class="neon-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <div class="about-icon">
+          <img src="https://img.icons8.com/fluency/96/dna-helix.png" alt="DNA" style="width:60px;">
+        </div>
+        <h3>Биотехнологии</h3>
+        <p>Мы объединили передовые биотехнологии и персонализированную фармацевтику.</p>
+      </div>
+      <div class="about-card reveal">
+        <div class="about-icon">
+          <img src="https://img.icons8.com/fluency/96/marker.png" alt="Map" style="width:60px;">
+        </div>
+        <h3>Адрес</h3>
+        <p>ул. Умара Кадырова 21</p>
+        <div class="mini-map">
+          <div class="map-grid"></div>
+          <div class="map-pin"></div>
+        </div>
+      </div>
+    </div>
+    <div class="about-image reveal">
+      <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Лаборатория">
+    </div>
+  </section>
+
+  <!-- Продукты будущего -->
+  <section id="products">
+    <div class="section-header reveal">
+      <h2>Продукты будущего</h2>
+      <div class="neon-line"></div>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <div class="card-image">
+          <img src="https://img.icons8.com/fluency/96/test-tube.png" alt="Генетические тесты">
+        </div>
+        <h3>Генетические тесты</h3>
+        <p>Полная расшифровка генома и персонализированные рекомендации.</p>
+      </div>
+      <div class="product-card reveal">
+        <div class="card-image">
+          <img src="https://img.icons8.com/fluency/96/vitamin.png" alt="Смарт-витамины">
+        </div>
+        <h3>Смарт-витамины</h3>
+        <p>Микроэлементы с нано-доставкой, которые усваиваются на 99%.</p>
+      </div>
+      <div class="product-card reveal">
+        <div class="card-image">
+          <img src="https://img.icons8.com/fluency/96/cell-division.png" alt="Регенерация клеток">
+        </div>
+        <h3>Регенерация клеток</h3>
+        <p>Запуск естественного восстановления тканей и органов.</p>
+      </div>
+      <div class="product-card reveal">
+        <div class="card-image">
+          <img src="https://img.icons8.com/fluency/96/robot-2.png" alt="Кибер-протезы">
+        </div>
+        <h3>Кибер-протезы</h3>
+        <p>Бионические конечности с нейросенсорной обратной связью.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts">
+    <div class="section-header reveal">
+      <h2>Контакты</h2>
+      <div class="neon-line"></div>
+    </div>
+    <div class="contacts-panel reveal">
+      <div class="contact-item">
+        <div class="contact-icon ringing">
+          <img src="https://img.icons8.com/fluency/96/phone.png" alt="Phone" style="width:50px;">
+        </div>
+        <a href="tel:88005553535" class="contact-value">8 800 555 35 35</a>
+        <span class="contact-hint">Звонок бесплатный</span>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon pulse-point">
+          <img src="https://img.icons8.com/fluency/96/marker.png" alt="Marker" style="width:50px;">
+        </div>
+        <span class="contact-value">ул. Умара Кадырова 21</span>
+        <span class="contact-hint">Пн–Вс: круглосуточно</span>
+      </div>
+    </div>
+    <form class="contact-form reveal">
+      <div class="input-group">
+        <input type="text" placeholder="Ваше имя" required>
+        <span class="input-border"></span>
+      </div>
+      <div class="input-group">
+        <input type="email" placeholder="Email" required>
+        <span class="input-border"></span>
+      </div>
+      <div class="input-group">
+        <textarea rows="3" placeholder="Сообщение" required></textarea>
+        <span class="input-border"></span>
+      </div>
+      <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <p>PHARM © 2026 — Технологии долголетия</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
